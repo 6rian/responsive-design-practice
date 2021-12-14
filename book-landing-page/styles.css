@@ -13,6 +13,8 @@ html {
 
 body {
   margin: 0;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #222;
 }
 
 body * {
@@ -40,7 +42,6 @@ img {
 .section {
   padding: 2rem 1rem;
 }
-
 
 .hero {
   background:var(--blue-4);
@@ -80,6 +81,8 @@ img {
 
 .overview p {
   margin-bottom: 0;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 .testimonials {
@@ -94,12 +97,16 @@ img {
   order: 3;
   margin: 0 auto;
 }
+.testimonials p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
 
 
 .product-versions-title {
   font-size: 2.2rem;
   line-height: 2.4rem;
-  margin: 0;
+  margin: 1rem auto;
   text-align: center;
 }
 
@@ -148,17 +155,42 @@ img {
   color: var(--blue-4);
 }
 
-@media (min-width: 992px) {
+
+.footer {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  background-color: var(--blue-4);
+}
+.footer .footer-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+.footer .footer-links a {
+  color: var(--blue-2);
+}
+.footer .copyright {
+  text-align: center;
+  color: var(--blue-0);
+  padding: 2rem 0 1rem 0;
+}
+
+@media (min-width: 768px) {
   .section {
     padding-left: 2rem;
     padding-right: 2rem;
   }
   .hero-inner {
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
   }
   .product-image {
     align-self: flex-start;
+    min-width: 250px;
   }
   .testimonials-inner {
     display: block;
@@ -167,6 +199,12 @@ img {
     float: right;
     max-width: 300px;
     margin: 0 0 2rem 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonials-image {
+    max-width: 350px;
   }
   .product-versions-wrapper {
     flex-direction: row;

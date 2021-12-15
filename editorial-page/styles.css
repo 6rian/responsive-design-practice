@@ -1,0 +1,64 @@
+/* Global Styles/Resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+.title {
+  font-size: 3rem;
+}
+
+.subheader {
+  font-size: 1.5rem;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 1em auto;
+}
+
+.col {
+  width: 100%;
+}
+
+/* Content Sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Tablet/Desktop Screens */
+@media (min-width: 768px) {
+  .section {
+    flex-direction: row;
+  }
+  
+  .col-1 {
+    width: 25%;
+  }
+  
+  .col-2 {
+    width: 50%;
+  }
+  
+  .col-3 {
+    width: 75%;
+  }
+}

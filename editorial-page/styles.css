@@ -19,7 +19,13 @@ img {
 
 /* Typography */
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.title span {
+  color: darkmagenta;
 }
 
 .subheader {
@@ -31,7 +37,7 @@ img {
 .container {
   width: 90%;
   max-width: 960px;
-  margin: 1em auto;
+  margin: 2em auto;
 }
 
 .col {
@@ -73,5 +79,10 @@ img {
   
   .col-3 {
     width: 73%;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 3.2rem;
   }
 }

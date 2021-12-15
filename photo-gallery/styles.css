@@ -1,0 +1,25 @@
+:root {
+  --darkest: #000000;
+  --darker: #002b46;
+  --default: #006293;
+  --lighter: #00a1ec;
+  --lightest: #00eaff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+h1, p {
+  margin-top: 0;
+}
+
+.header {
+  background-color: var(--darker);
+}

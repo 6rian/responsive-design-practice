@@ -24,6 +24,7 @@ img {
 
 .subheader {
   font-size: 1.5rem;
+  color: darkmagenta;
 }
 
 /* Layout */
@@ -41,24 +42,36 @@ img {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  justify-content: space-around;
+  margin: 1em auto 2em auto;
+}
+
+.col-dark {
+  background-color: darkslateblue;
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.col-dark p {
+  margin-bottom: 0;
 }
 
 /* Tablet/Desktop Screens */
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .section {
     flex-direction: row;
   }
-  
+
   .col-1 {
-    width: 25%;
+    width: 23%;
   }
   
   .col-2 {
-    width: 50%;
+    width: 48%;
   }
   
   .col-3 {
-    width: 75%;
+    width: 73%;
   }
 }

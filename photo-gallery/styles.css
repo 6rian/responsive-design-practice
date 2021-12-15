@@ -49,6 +49,7 @@ img {
   gap: 0.5em;
   justify-content: space-around;
 }
+
 .nav-links a {
   background-color: var(--lightest);
   color: var(--darker);
@@ -59,6 +60,7 @@ img {
   padding: 0.3em 0.7em;
   border-radius: 5px;
 }
+
 .nav-links a:focus,
 .nav-links a:hover {
   background-color: var(--darker);
@@ -67,4 +69,23 @@ img {
 
 .content {
   padding: 2em 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.gallery-item {
+  max-width: 300px;
+  line-height: 0;
+  box-shadow: 2px 2px;
+  transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.4);
+  box-shadow: 0 0 50px #000;
 }

@@ -1,0 +1,11 @@
+.header {
+  background-color: $primary-color-100;
+  padding: 3em 0;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}

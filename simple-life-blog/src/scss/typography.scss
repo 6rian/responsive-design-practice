@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $sans-serif-font-stack;
+}
+
+.site-title {
+  h1 {
+    margin: 0;
+    font-family: $serif-font-stack;
+    font-size: 2rem;
+    font-weight: normal;
+    color: $accent-color-200;
+  }
+
+  span {
+    font-family: $sans-serif-font-stack;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $accent-color-100;
+    letter-spacing: 0.12rem;
+  }
+}
+
+.footer {
+  p {
+    color: white;
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+}

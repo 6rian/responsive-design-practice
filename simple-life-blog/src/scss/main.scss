@@ -1,5 +1,18 @@
-@import './normalize.css';
+@import './normalize';
 
-body {
-  font-family: sans-serif;
-}
+$primary-color-100: #F8F8F8;
+$primary-color-200: #EBEBEB;
+$primary-color-300: #707070;
+$primary-color-400: #717171;
+$accent-color-100: #1792D2;
+$accent-color-200: #143774;
+
+$sans-serif-font-stack: Ubuntu, Helvetica, Arial, sans-serif;
+$serif-font-stack: Lora, Georgia, sans-serif;
+
+@import './base';
+@import './layout';
+@import './typography';
+
+@import './components/header';
+@import './components/footer';

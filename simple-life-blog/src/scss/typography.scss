@@ -25,6 +25,32 @@ body {
   }
 }
 
+.sidebar-widget {
+  .widget-about-me-text {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: $accent-color-200;
+    margin: 1em 0;
+  }
+
+  .widget-title,
+  .widget-recent-post-title {
+    font-size: 1.125rem;
+    color: $accent-color-200;
+  }
+
+  .widget-title {
+    font-family: $sans-serif-font-stack;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+  }
+
+  .widget-recent-post-title {
+    font-family: $serif-font-stack;
+    margin: 1em 0 1.5em 0;
+  }
+}
+
 .footer {
   p {
     color: white;

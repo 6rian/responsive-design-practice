@@ -1,4 +1,29 @@
 .container {
   max-width: 90vw;
   margin: 0 auto;
+
+  @media (min-width: $main-breakpoint) {
+    width: 90vw;
+    max-width: 1200px;
+  }
+}
+
+.content-inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $main-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .posts {
+      width: 70%;
+    }
+
+    .sidebar {
+      width: 28%;
+      min-width: 200px;
+      margin-left: 1em;
+    }
+  }
 }

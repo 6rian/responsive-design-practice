@@ -10,10 +10,13 @@ $accent-color-200: #143774;
 $sans-serif-font-stack: Ubuntu, Helvetica, Arial, sans-serif;
 $serif-font-stack: Lora, Georgia, sans-serif;
 
+$main-breakpoint: 675px;
+
 @import './base';
 @import './layout';
 @import './typography';
 
 @import './components/header';
 @import './components/footer';
+@import './components/post';
 @import './components/sidebar-widget';

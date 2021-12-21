@@ -25,6 +25,44 @@ body {
   }
 }
 
+.posts {
+  font-weight: 300;
+  color: $primary-color-300;
+  
+  strong {
+    font-weight: bold;
+  }
+
+  a {
+    color: $accent-color-100;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+    font-family: $serif-font-stack;
+    color: $accent-color-200;
+  }
+
+  .post-meta {
+    font-size: 0.875rem;
+  }
+
+  .post-read-more-link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2.8px;
+    margin-top: 1.5em;
+  }
+
+  .post-read-more-link:hover,
+  .post-read-more-link:focus {
+    color: $accent-color-200;
+    text-decoration: underline;
+  }
+}
+
 .sidebar-widget {
   .widget-about-me-text {
     font-size: 0.875rem;

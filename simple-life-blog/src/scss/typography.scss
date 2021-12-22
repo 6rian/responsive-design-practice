@@ -26,6 +26,25 @@ body {
   }
 }
 
+.site-nav {
+  a {
+    color: $primary-color-400;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0.5em;
+  }
+
+  a:hover,
+  a:focus {
+    color: $accent-color-200;
+  }
+
+  a.current-page {
+    border-bottom: 2px solid $primary-color-400;
+  }
+}
+
 .posts {
   font-weight: 300;
   color: $primary-color-300;

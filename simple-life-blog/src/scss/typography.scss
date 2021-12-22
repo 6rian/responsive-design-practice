@@ -4,6 +4,7 @@
 
 body {
   font-family: $sans-serif-font-stack;
+  line-height: 1.6;
 }
 
 .site-title {
@@ -40,6 +41,7 @@ body {
   .post-title {
     font-size: 1.5rem;
     font-family: $serif-font-stack;
+    font-weight: normal;
     color: $accent-color-200;
   }
 
@@ -74,6 +76,7 @@ body {
   .widget-title,
   .widget-recent-post-title {
     font-size: 1.125rem;
+    font-weight: normal;
     color: $accent-color-200;
   }
 

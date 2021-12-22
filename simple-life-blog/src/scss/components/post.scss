@@ -1,8 +1,27 @@
+.post {
+  padding-bottom: 2em;
+}
+
 .featured-post {
   border-bottom: 1px solid $primary-color-300;
   margin-bottom: 2em;
 }
 
-.post {
-  padding-bottom: 2em;
+.recent-post {
+  display: flex;
+  flex-direction: column;
+  
+  @media (min-width: $main-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+
+    .secondary-content {
+      width: 30%;
+    }
+
+    .main-content {
+      width: 68%;
+    }
+  }
 }

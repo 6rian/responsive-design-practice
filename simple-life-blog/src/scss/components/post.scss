@@ -17,11 +17,16 @@
     gap: 1em;
 
     .secondary-content {
-      width: 30%;
+      min-width: 150px;
+      width: 35%;
     }
 
     .main-content {
-      width: 68%;
+      width: 63%;
+    }
+
+    .post-image {
+      height: 250px;
     }
   }
 }

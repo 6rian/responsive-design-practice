@@ -5,5 +5,109 @@
 body {
   margin: 0;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
   text-align: center;
 }
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* =========================================
+ * Layout
+ * ========================================= */
+
+.postcard {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow {
+  order: -2;
+}
+
+.main-content {
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .postcard {
+    flex-direction: row;
+  }
+
+  .intro {
+    min-width: 60%;
+  }
+}
+
+/* =========================================
+ * Typography
+ * ========================================= */
+
+strong {
+  font-weight: 900;
+}
+
+small {
+  font-size: 0.625rem;
+}
+
+.eyebrow,
+.intro-subtitle,
+.main-subtitle {
+  text-transform: uppercase;
+}
+
+.intro-title {
+  font-size: 2.25rem;
+  font-weight: 300;
+  padding: 0 1em;
+}
+
+.intro-subtitle,
+.main-title {
+  font-size: 1.3125rem;
+  font-weight: 900;
+}
+
+.main-subtitle {
+  font-weight: 900;
+}
+
+.disclaimer,
+.main-text {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .intro-title {
+    font-size: 3.5rem;
+  }
+
+  .intro-subtitle,
+  .main-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* =========================================
+ * Components
+ * ========================================= */
+
+ .registration-form {
+   display: flex;
+   flex-direction: column;
+ }

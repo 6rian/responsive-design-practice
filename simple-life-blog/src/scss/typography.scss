@@ -36,6 +36,7 @@ h3 {
   a {
     color: $primary-color-400;
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
     padding-bottom: 0.5em;
@@ -51,18 +52,27 @@ h3 {
   }
 }
 
+.page,
 .posts {
   font-weight: 300;
   color: $primary-color-300;
-  
+
   strong {
     font-weight: bold;
   }
-
+  
   a {
     color: $accent-color-100;
   }
+  
+  a:hover,
+  a:focus {
+    color: $accent-color-200;
+    text-decoration: none;
+  }
+}
 
+.posts {
   .post-title {
     font-size: 1.5rem;
   }
@@ -87,6 +97,12 @@ h3 {
   }
 }
 
+.page {
+  h3 {
+    color: $accent-color-100;
+  }
+}
+
 .sidebar-widget {
   .widget-about-me-text {
     font-size: 0.875rem;
@@ -98,18 +114,19 @@ h3 {
   .widget-title,
   .widget-recent-post-title {
     font-size: 1.125rem;
-    font-weight: normal;
     color: $accent-color-200;
   }
-
+  
   .widget-title {
     font-family: $sans-serif-font-stack;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3.6px;
   }
-
+  
   .widget-recent-post-title {
     font-family: $serif-font-stack;
+    font-weight: normal;
     margin: 1em 0 1.5em 0;
   }
 }

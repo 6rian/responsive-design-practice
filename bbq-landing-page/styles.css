@@ -1,3 +1,10 @@
+:root {
+  --orange: #F18119;
+  --gray-100: #989898;
+  --gray-200: #5A5A5A;
+  --gray-300: #404040;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,9 +33,11 @@ p {
 }
 
 .intro {
-  background: yellow;
+  background: url(images/dark-ribs.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
+  height: 358px;
 }
 
 .eyebrow {
@@ -36,7 +45,7 @@ p {
 }
 
 .main-content {
-  padding: 1em;
+  padding: 2em 1em;
 }
 
 @media (min-width: 768px) {
@@ -46,6 +55,7 @@ p {
 
   .intro {
     min-width: 60%;
+    height: 100vh;
   }
 }
 
@@ -65,18 +75,22 @@ small {
 .intro-subtitle,
 .main-subtitle {
   text-transform: uppercase;
+  color: var(--orange);
 }
 
 .intro-title {
   font-size: 2.25rem;
   font-weight: 300;
   padding: 0 1em;
+  color: white;
+  line-height: 1;
 }
 
 .intro-subtitle,
 .main-title {
   font-size: 1.3125rem;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .main-subtitle {
@@ -86,6 +100,18 @@ small {
 .disclaimer,
 .main-text {
   font-weight: 300;
+}
+
+.main-title {
+  color: var(--gray-300);
+}
+
+.main-text {
+  color: var(--gray-200);
+}
+
+.disclaimer {
+  color: var(--gray-100);
 }
 
 @media (min-width: 768px) {

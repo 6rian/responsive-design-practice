@@ -57,11 +57,19 @@ p {
     min-width: 60%;
     height: 100vh;
   }
+
+  .main-content {
+    align-self: center;
+  }
 }
 
 /* =========================================
  * Typography
  * ========================================= */
+
+input {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
 
 strong {
   font-weight: 900;
@@ -93,6 +101,10 @@ small {
   margin-bottom: 0;
 }
 
+.eyebrow strong {
+  border-top: 8px solid yellow;
+}
+
 .main-subtitle {
   font-weight: 900;
 }
@@ -112,6 +124,8 @@ small {
 
 .disclaimer {
   color: var(--gray-100);
+  display: block;
+  padding: 2em 0;
 }
 
 @media (min-width: 768px) {
@@ -133,7 +147,28 @@ small {
  * Components
  * ========================================= */
 
- .registration-form {
-   display: flex;
-   flex-direction: column;
- }
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.registration-form input {
+  width: 75%;
+  border-radius: 7px;
+  border: 1px solid var(--gray-200);
+  color: var(--gray-100);
+  padding: 0.75em;
+  text-align: center;
+}
+
+.registration-form input[type="submit"] {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  font-size: 0.75rem;
+  padding: 1.5em 3em;
+  border: none;
+  background: transparent linear-gradient(270deg, #FF713B 0%, #FFA51D 100%) 0% 0% no-repeat padding-box;
+}

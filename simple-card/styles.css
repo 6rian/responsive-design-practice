@@ -1,3 +1,64 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: #2D2E36;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.card,
+.card-image {
+  border-radius: 0.5em;
+}
+
+.card {
+  background-color: #383A45;
+  padding: 1.5625em;
+  margin: 8.75em 1.875em;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  margin-top: 1.625rem;
+  margin-bottom: 2.6875rem;
+}
+
+.card-description {
+  color: #8D91A6;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.625rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    max-width: 45.5625em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 36% auto;
+    grid-column-gap: 2.375rem;
+  }
+
+  .card-image {
+    grid-row: span 3;
+    height: 15.625rem;
+    width: auto;
+    max-width: 16.375rem;
+    object-fit: cover;
+  }
+
+  .card-title {
+    margin-bottom: 2.3875rem;
+  }
+}

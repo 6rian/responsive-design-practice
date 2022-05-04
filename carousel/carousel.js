@@ -28,16 +28,48 @@ const makePhotoCards = () => {
 // ================================================
 
 class Carousel {
+  ACTIVE_CLASS = 'active';
+  SLIDES_CONTAINER_CLASS = 'slides';
+  SLIDE_CLASS = 'slide';
+
   constructor(element) {
     this.container = element;
-    this.slidesContainer = this.container.querySelector('.slides');
+    this.slidesContainer = this.container.querySelector(`.${this.SLIDES_CONTAINER_CLASS}`);
   }
 
+  setCurrentIndex(n) {
+    this.container.dataset.currentIndex = n;
+  }
+  
+  getCurrentIndex() {
+    return parseInt(this.container.dataset.currentIndex);
+  }
+  
   makeAndAppendSlide(content) {
     const slide = document.createElement('div');
-    slide.classList.add('slide');
+    slide.classList.add(this.SLIDE_CLASS);
     slide.appendChild(content);
     this.slidesContainer.appendChild(slide);
+  }
+
+  getCurrentSlide() {
+    return this.slidesContainer.querySelector(`.${this.ACTIVE_CLASS}`);
+  }
+
+  setActiveSlide(n) {
+    const current = this.getCurrentSlide();
+    if (current) {
+      current.classList.remove(this.ACTIVE_CLASS);
+    }
+
+    const next = this.slidesContainer.children[n];
+    next.classList.add(this.ACTIVE_CLASS);
+    this.setCurrentIndex(n);
+  }
+
+  start() {
+    this.setCurrentIndex(0);
+    this.setActiveSlide(0);
   }
 }
 
@@ -50,3 +82,5 @@ var carousel = new Carousel(carouselEl);
 
 const photos = makePhotoCards();
 photos.forEach(photo => carousel.makeAndAppendSlide(photo));
+
+carousel.start();

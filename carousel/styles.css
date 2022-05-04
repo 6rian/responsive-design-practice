@@ -30,9 +30,15 @@ p {
 }
 
 .slides {
-  display: flex;
-  gap: 1rem;
   overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
 }
 
 .photo-card {

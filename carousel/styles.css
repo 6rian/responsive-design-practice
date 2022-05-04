@@ -23,3 +23,19 @@ p {
   margin-top: 0;
 }
 
+.carousel {
+  margin: 200px auto;
+  width: 500px;
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.photo-card {
+  width: 500px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+}

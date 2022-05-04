@@ -67,9 +67,18 @@ class Carousel {
     this.setCurrentIndex(n);
   }
 
+  debug() {
+    console.log({
+      slidesContainer: this.slidesContainer,
+      currentIndex: this.getCurrentIndex(),
+      currentSlide: this.slidesContainer.children[this.getCurrentIndex()]
+    });
+  }
+
   start() {
     this.setCurrentIndex(0);
     this.setActiveSlide(0);
+    this.debug();
   }
 }
 

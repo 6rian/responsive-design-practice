@@ -11,7 +11,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 200px 0;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   text-align: center;
@@ -25,8 +25,11 @@ p {
 }
 
 .carousel {
-  margin: 200px auto 0;
+  margin: 0 auto;
   width: var(--carousel-width);
+}
+
+.slides {
   display: flex;
   gap: 1rem;
   overflow: hidden;
@@ -41,7 +44,7 @@ p {
   height: auto;
 }
 
-.carousel-controls {
+.nav {
   width: var(--carousel-width);
   margin: 3rem auto;
   display: flex;
@@ -49,7 +52,7 @@ p {
   justify-content: center;
 }
 
-.carousel-controls button {
+.nav button {
   background-color: #333;
   border: 0;
   outline: 0;
@@ -60,7 +63,7 @@ p {
   border-radius: 5%;
 }
 
-.carousel-controls button:hover {
+.nav button:hover {
   background-color: #000;
   cursor: pointer;
 }

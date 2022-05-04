@@ -1,0 +1,51 @@
+:root {
+  --purple: #5200FF;
+}
+
+html {
+  font-size: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+.landing-page {
+  margin: 0;
+  font-family: sans-serif;
+  max-width: 100vw;
+}
+
+.promo {
+  background-color: var(--purple);
+  color: #fff;
+  padding: 110px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__title {
+  font-size: 4rem;
+  line-height: 4.75rem;
+  text-transform: uppercase;
+  margin: 0 auto 5.125rem auto;
+  width: 75%;
+}
+
+.promo__description {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+button[type="submit"] {
+  background-color: var(--purple);
+  color: #fff;
+  padding: 1.25rem;
+  border: 0;
+}

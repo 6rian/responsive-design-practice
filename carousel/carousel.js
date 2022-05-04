@@ -31,10 +31,14 @@ class Carousel {
   ACTIVE_CLASS = 'active';
   SLIDES_CONTAINER_CLASS = 'slides';
   SLIDE_CLASS = 'slide';
+  PREV_BUTTON_CLASS = 'prev';
+  NEXT_BUTTON_CLASS = 'next';
 
   constructor(element) {
     this.container = element;
     this.slidesContainer = this.container.querySelector(`.${this.SLIDES_CONTAINER_CLASS}`);
+    this.prev = this.prev.bind(this);
+    this.next = this.next.bind(this);
   }
 
   setCurrentIndex(n) {
@@ -43,6 +47,27 @@ class Carousel {
   
   getCurrentIndex() {
     return parseInt(this.container.dataset.currentIndex);
+  }
+
+  getMaxIndex() {
+    return (this.countSlides() > 0) ? this.countSlides() - 1 : 0;
+  }
+
+  countSlides() {
+    return this.slidesContainer.children.length;
+  }
+
+  prev() {
+    let nextIndex = this.getCurrentIndex() - 1;
+    if (nextIndex < 0) {
+      nextIndex = this.getMaxIndex();
+    }
+    this.setActiveSlide(nextIndex);
+  }
+
+  next() {
+    const nextIndex = (this.getCurrentIndex() + 1) % this.countSlides();
+    this.setActiveSlide(nextIndex);
   }
   
   makeAndAppendSlide(content) {
@@ -78,7 +103,11 @@ class Carousel {
   start() {
     this.setCurrentIndex(0);
     this.setActiveSlide(0);
-    this.debug();
+
+    const prevButton = this.container.querySelector(`.${this.PREV_BUTTON_CLASS}`);
+    const nextButton = this.container.querySelector(`.${this.NEXT_BUTTON_CLASS}`);
+    prevButton.addEventListener('click', this.prev);
+    nextButton.addEventListener('click', this.next);
   }
 }
 

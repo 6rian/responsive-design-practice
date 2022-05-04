@@ -1,0 +1,25 @@
+:root {
+  --orange: #F18119;
+  --gray-100: #989898;
+  --gray-200: #5A5A5A;
+  --gray-300: #404040;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+

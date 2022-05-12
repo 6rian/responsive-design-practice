@@ -7,19 +7,24 @@
   flex-direction: column-reverse;
 }
 
-.inner {
+.inner p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;  
 }
 
+.inner p:not(:first-child) {
+  display: none;
+}
+
 .switch {
-  width: 0;
-  height: 0;
+  appearance: none;
+  visibility: hidden;
 }
 
 .switch::after {
+  visibility: visible; 
   white-space: nowrap;
   content: "Read More";
   display: block;
@@ -36,6 +41,10 @@
 
 .switch:checked ~ .inner {
   -webkit-line-clamp: unset;
+}
+
+.switch:checked ~ .inner p {
+  display: block;
 }
 
 /**********************************************

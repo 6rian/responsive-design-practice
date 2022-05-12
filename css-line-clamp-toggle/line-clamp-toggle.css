@@ -1,0 +1,38 @@
+.outter {
+  width: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.inner {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;  
+}
+
+.switch {
+  width: 0;
+  height: 0;
+}
+
+.switch::after {
+  white-space: nowrap;
+  content: "Read More";
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.switch:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.switch:checked::after {
+  content: "Read Less";
+}
+
+.switch:checked ~ .inner {
+  -webkit-line-clamp: unset;
+}

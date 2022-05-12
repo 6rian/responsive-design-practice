@@ -1,7 +1,7 @@
 /**********************************************
  * Main
  *********************************************/
-.outter {
+ .outter {
   width: 400px;
   display: flex;
   flex-direction: column-reverse;
@@ -23,8 +23,6 @@
   white-space: nowrap;
   content: "Read More";
   display: block;
-  width: 100%;
-  margin-top: 1rem;
 }
 
 .switch:hover {
@@ -43,7 +41,8 @@
 /**********************************************
  * Page Styles
  *********************************************/
-body {
+body,
+.switch {
   font-family: Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
@@ -57,4 +56,11 @@ body {
 
 .outter {
   margin: 0 auto 100px;
+}
+
+.switch::after {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-left: -4px;
+  color: blue;
 }

@@ -9,7 +9,10 @@
   <body>
     <section class="intro">
       <h1>Pure CSS Line Clamp Toggle</h1>
-      <p>The read more/less toggle switch below is implemented only with CSS. This is achieved by using a checkbox element to remember state, and a sibling selector to add/remove line clamping.</p>
+      <ul>
+        <li>The read more/less toggle switch below is implemented using only CSS.</li>
+        <li>This is achieved by using a checkbox to remember state, and a sibling selector to add/remove line clamping.</li>
+        <li>Flexbox is needed to reverse the order of the inner wrapper and checkbox since there isn't a previous sibling selector.</li>
     </section>
     <div class="outter">
       <input type="checkbox" class="switch">

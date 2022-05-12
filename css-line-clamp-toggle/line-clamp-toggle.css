@@ -1,3 +1,6 @@
+/**********************************************
+ * Main
+ *********************************************/
 .outter {
   width: 400px;
   display: flex;
@@ -35,4 +38,23 @@
 
 .switch:checked ~ .inner {
   -webkit-line-clamp: unset;
+}
+
+/**********************************************
+ * Page Styles
+ *********************************************/
+body {
+  font-family: Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.intro {
+  background-color: lightgreen;
+  margin: 50px auto;
+  padding: 2rem;
+  max-width: 60%;
+  border-radius: 10px;
+}
+
+.outter {
+  margin: 0 auto 100px;
 }
